@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/_bg__iphone_14_pro___2_ek2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79EA99" />
+
+    <LinearLayout
+        android:id="@+id/page_iphone_14_pro___2_ek1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#79EA99"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/rectangle_10"
+            android:layout_width="423dp"
+            android:layout_height="620dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="218dp"
+            android:background="#EFECEC"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/getting_started"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting Started"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/let_s_login_for_explore_continues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pipe metal falls "
+                android:textColor="#C1C1C1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/email_or_phone_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email or Phone Number"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/email_or_phone_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF8F8"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/email_or_phone_number_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logounbg_2" />
+
+                <EditText
+                    android:id="@+id/email_or_phone_number_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#C1C1C1"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFF8F8"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/password_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logounbg_2" />
+
+                <EditText
+                    android:id="@+id/password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="#C1C1C1"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#000000"
+                android:text="Log In"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Forgot Password?"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/need_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Need an account? Sign Up"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangle_8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F4F745"
+            android:orientation="vertical">
+
+            <!-- Add child views here -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangle_12"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="#622A0F"
+            android:orientation="vertical">
+
+            <!-- Add child views here -->
+
+            <LinearLayout
+                android:id="@+id/rectangle_9"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#FFFBFB"
+                android:orientation="vertical">
+
+                <!-- Add child views here -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
