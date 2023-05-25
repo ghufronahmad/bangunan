@@ -47,6 +47,8 @@
             <include layout="@layout/kategori"/>
             <include layout="@layout/alat"/>
             <include layout="@layout/perlengkapan"/>
+            <include layout="@layout/material"/>
+            <include layout="@layout/cat"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
