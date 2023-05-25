@@ -13,15 +13,15 @@
 
     <LinearLayout
         android:id="@+id/page_iphone_14_pro___2_ek1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="414dp"
+        android:layout_height="709dp"
         android:background="#79EA99"
         android:orientation="vertical">
 
 
         <LinearLayout
             android:id="@+id/rectangle_10"
-            android:layout_width="423dp"
+            android:layout_width="361dp"
             android:layout_height="620dp"
             android:layout_marginLeft="29dp"
             android:layout_marginTop="218dp"
