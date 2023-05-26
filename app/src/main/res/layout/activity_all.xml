@@ -50,7 +50,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_bawah"
-        android:id="@+id/navigation_bottom"
+        android:id="@+id/navigation_bottom_all"
         android:layout_width="match_parent"
         android:layout_height="55dp"/>
 

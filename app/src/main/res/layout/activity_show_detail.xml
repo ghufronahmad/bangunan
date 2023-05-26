@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
-                android:text="title"
+                android:text="Mesin Bor"
                 android:textAlignment="center"
                 android:textColor="#373b54"
                 android:textSize="24sp"
@@ -32,7 +32,7 @@
                 android:id="@+id/priceTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rp."
+                android:text="Rp 500.000"
                 android:textAlignment="center"
                 android:textColor="#ff5e00"
                 android:textSize="24sp" />
