@@ -18,13 +18,13 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/alat"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.example.bangunan.widgets.wrapElement
+
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-
+                    android:clickable="true"
                     android:src="@drawable/toolbox"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -53,7 +53,7 @@
 
         </com.example.bangunan.widgets.wrapElement>
         <RelativeLayout
-            android:id="@+id/perlengkapan"
+
             android:layout_width="15dp"
             android:layout_height="match_parent"/>
         <com.example.bangunan.widgets.wrapElement
@@ -69,11 +69,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-
+                    android:clickable="true"
                     android:src="@drawable/plumbing"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-
                     app:tint="@color/white" />
             </com.example.bangunan.widgets.cardElement>
             <TextView

@@ -5,10 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,24 +44,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        LinearLayout alatLayout = findViewById(R.id.alat);
-        RelativeLayout perlengkapanLayout = findViewById(R.id.perlengkapan);
-
-        alatLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, listAlatcat.class);
-                startActivity(intent);
-            }
-        });
-
-        perlengkapanLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, listPerlengkapancat.class);
-                startActivity(intent);
-            }
-        });
+        // LinearLayout alatLayout = findViewById(R.id.hkhk);
+        // RelativeLayout perlengkapanLayout = findViewById(R.id.perlengkapan);
     }
 
     // Click listener method for "Alat" category
