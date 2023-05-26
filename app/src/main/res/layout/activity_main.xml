@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <include layout="@layout/kategori"/>
-            <include layout="@layout/activity_all"/>
+            <include layout="@layout/all"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
