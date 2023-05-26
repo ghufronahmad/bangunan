@@ -24,12 +24,15 @@ public class activityCart extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             cartItems = (List<CartItem>) extras.getSerializable("cartItems");
+        } else {
+            cartItems = new ArrayList<>(); // Create an empty list if no items are passed
         }
 
         // Set up RecyclerView and Adapter
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerViewCart);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         cartAdapter = new CartAdapter(cartItems);
         recyclerView.setAdapter(cartAdapter);
     }
 }
+
