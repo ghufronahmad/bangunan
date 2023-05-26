@@ -15,11 +15,12 @@ public class ManagementCart {
         this.context = context;
         this.tinyDB = new TinyDB(context);
     }
-    public void insertAlat(AlatDomain item){
-        ArrayList<AlatDomain> listAlat=
-                boolean existAlready=false;
-        int n=0;
-        for(int i=0; i<listAlat.size();i++){
+
+    public void insertAlat(AlatDomain item) {
+        ArrayList<AlatDomain> listAlat = getListCart();
+        boolean existAlready = false;
+        int n = 0;
+        for (int i = 0; i < listAlat.size(); i++) {
             if (listAlat.get(i).getTitle().equals(item.getTitle())) {
                 existAlready = true;
                 n = i;
@@ -31,10 +32,15 @@ public class ManagementCart {
         } else {
             listAlat.add(item);
         }
-        tinyDB.putListObject("CardList",listAlat);
+        tinyDB.putListObject("CartList", listAlat);
         Toast.makeText(context, "Added To Your Cart", Toast.LENGTH_SHORT).show();
     }
-    public ArrayList<AlatDomain>getListCart(){
-        return tinyDB.getListObject("CartList");
+
+    public ArrayList<AlatDomain> getListCart() {
+        ArrayList<AlatDomain> cartList = tinyDB.getListObject("CartList", AlatDomain.class);
+        if (cartList == null) {
+            cartList = new ArrayList<>();
+        }
+        return cartList;
     }
 }

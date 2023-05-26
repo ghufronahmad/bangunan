@@ -25,7 +25,7 @@ public class AlatAdapter extends RecyclerView.Adapter<AlatAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate= LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_alat,parent,false);
+        View inflate= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_main,parent,false);
         return new ViewHolder(inflate);
     }
 
