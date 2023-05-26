@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+
         android:padding="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,11 +19,14 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/alat"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        >
         <com.example.bangunan.widgets.wrapElement
 
             android:layout_weight="1"
@@ -53,14 +57,16 @@
 
         </com.example.bangunan.widgets.wrapElement>
         <RelativeLayout
-
+            android:id="@+id/perlengkapan"
             android:layout_width="15dp"
             android:layout_height="match_parent"/>
         <com.example.bangunan.widgets.wrapElement
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+
+            >
             <com.example.bangunan.widgets.cardElement
                 android:backgroundTint="#FFDE00"
                 android:padding="10dp"

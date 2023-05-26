@@ -1,7 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    tools:context=".ActivityAll">
     <LinearLayout
         android:padding="20dp"
         android:orientation="horizontal"
@@ -51,6 +53,7 @@
                         android:paddingTop="5dp">
 
                         <TextView
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Mesin Bor"
@@ -60,6 +63,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 500.000,-" />
+
+                        <Button
+                            android:id="@+id/buttonBor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -92,6 +101,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 20.000,-" />
+
+                        <Button
+                            android:id="@+id/buttonPalu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
+
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -130,6 +146,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 50.000,-" />
+
+                        <Button
+                            android:id="@+id/buttonobeng"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -162,6 +184,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 50.000,-" />
+                        <Button
+                            android:id="@+id/buttontang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -200,6 +227,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 10.000,-" />
+                        <Button
+                            android:id="@+id/buttonmeteran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -232,6 +264,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 10.000,-" />
+                        <Button
+                            android:id="@+id/buttonpenggaris"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -270,6 +307,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 500.000,-" />
+                        <Button
+                            android:id="@+id/buttonhelm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -302,6 +344,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 200.000,-" />
+                        <Button
+                            android:id="@+id/buttonkotak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -340,6 +387,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 75.000,-" />
+                        <Button
+                            android:id="@+id/buttonsemen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -372,6 +424,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 500,-" />
+                        <Button
+                            android:id="@+id/buttonpaku"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -410,6 +467,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 2.000,-" />
+                        <Button
+                            android:id="@+id/Buttonbatu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -480,6 +542,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 100.000,-" />
+                        <Button
+                            android:id="@+id/buttonnippon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -512,6 +579,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 100.000,-" />
+                        <Button
+                            android:id="@+id/buttondulux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
@@ -550,6 +622,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 100.000,-" />
+                        <Button
+                            android:id="@+id/buttonpropan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
 
@@ -582,6 +659,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rp 100.000,-" />
+                        <Button
+                            android:id="@+id/buttonaquaproof"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="beli" />
                     </LinearLayout>
                 </com.example.bangunan.widgets.listAlat>
             </LinearLayout>
