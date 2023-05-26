@@ -7,8 +7,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ActivityAll extends AppCompatActivity {
 
+    private List<CartItem> cartItems;
     private int totalPrice;
 
     @Override
@@ -16,79 +20,65 @@ public class ActivityAll extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all);
 
-        // Get references to the buttons
+        cartItems = new ArrayList<>(); // List to store cart items
+
         Button buttonBor = findViewById(R.id.buttonBor);
         Button buttonPalu = findViewById(R.id.buttonPalu);
         Button buttonObeng = findViewById(R.id.buttonobeng);
         Button buttonTang = findViewById(R.id.buttontang);
         Button buttonMeteran = findViewById(R.id.buttonmeteran);
 
-        // Set click listeners for the buttons
-        buttonBor.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener addToCartClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Add item to the cart
-                addToCart(500000);
+                String itemName = "";
+                int itemPrice = 0;
 
-                // Open the cart activity
+                switch (v.getId()) {
+                    case R.id.buttonBor:
+                        itemName = "Bor";
+                        itemPrice = 500000;
+                        break;
+                    case R.id.buttonPalu:
+                        itemName = "Palu";
+                        itemPrice = 20000;
+                        break;
+                    case R.id.buttonobeng:
+                        itemName = "Obeng";
+                        itemPrice = 50000;
+                        break;
+                    case R.id.buttontang:
+                        itemName = "Tang";
+                        itemPrice = 50000;
+                        break;
+                    case R.id.buttonmeteran:
+                        itemName = "Meteran";
+                        itemPrice = 10000;
+                        break;
+                }
+
+                addToCart(itemName, itemPrice);
                 openCartActivity();
             }
-        });
+        };
 
-        buttonPalu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Add item to the cart
-                addToCart(20000);
-
-                // Open the cart activity
-                openCartActivity();
-            }
-        });
-
-        buttonObeng.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Add item to the cart
-                addToCart(50000);
-
-                // Open the cart activity
-                openCartActivity();
-            }
-        });
-
-        buttonTang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Add item to the cart
-                addToCart(50000);
-
-                // Open the cart activity
-                openCartActivity();
-            }
-        });
-
-        buttonMeteran.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Add item to the cart
-                addToCart(10000);
-
-                // Open the cart activity
-                openCartActivity();
-            }
-        });
+        buttonBor.setOnClickListener(addToCartClickListener);
+        buttonPalu.setOnClickListener(addToCartClickListener);
+        buttonObeng.setOnClickListener(addToCartClickListener);
+        buttonTang.setOnClickListener(addToCartClickListener);
+        buttonMeteran.setOnClickListener(addToCartClickListener);
     }
 
-    private void addToCart(int itemPrice) {
-        // Add your logic here to add the item to the cart
-        // You can maintain a list of items or use a database to store the cart items
-        // Update the total price as well
+    private void addToCart(String itemName, int itemPrice) {
+        CartItem item = new CartItem(itemName, itemPrice);
+        cartItems.add(item);
         totalPrice += itemPrice;
     }
 
     private void openCartActivity() {
         Intent intent = new Intent(this, activityCart.class);
+        intent.putExtra("cartItems", (ArrayList<CartItem>) cartItems);
+        intent.putExtra("totalPrice", totalPrice);
         startActivity(intent);
     }
 }
